@@ -67,5 +67,32 @@ Key Observations:
 ## Installation
 
 1. Clone the repository:
-```bash
 git clone https://github.com/palluxston/PyitTineHtaungUniversity.git
+
+2. Database setup:
+   
+   - Create a new MySQL database named 'pyittinehtaunguniversity'
+   - Import the database schema from pyittinehtaunguniversity.sql
+
+3. Configure database connection:
+   - Open connect.php
+   - Update database credentials if necessary
+4. Server setup:
+   
+   - Place the project folder in your XAMPP's htdocs directory
+   - Start Apache and MySQL services in XAMPP Control Panel
+5. Access the application:
+   
+   - Open your web browser
+   - Navigate to: http://localhost/ProjectHayManSuNaing/PyitTineHtaungUniversity/public/
+
+## Default Login Credentials
+### Admin
+- Username: admin123
+- Password: admin123456789
+### Faculty
+- Username: faculty@pth.edu
+- Password: faculty123
+### Student
+- Username: student@pth.edu
+- Password: student123
