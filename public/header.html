@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Pyit Tine Htaung University</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Header */
+.site-header {
+    background-color: #fff;
+    border-bottom: 2px solid #004080;
+    box-shadow: 0 2px 10px rgba(0, 64, 128, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #004080;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.logo img {
+    max-height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    color: #0066cc;
+    text-shadow: 2px 2px 4px rgba(0, 64, 128, 0.2);
+}
+
+.logo:hover img {
+    transform: scale(1.05);
+}
+
+/* Add this for a subtle text gradient effect */
+@media (min-width: 768px) {
+    .logo {
+        background: linear-gradient(45deg, #004080, #0066cc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+    }
+
+    .logo::after {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 70px; /* Adjust based on your logo image width */
+        width: 0;
+        height: 2px;
+        background: linear-gradient(45deg, #004080, #0066cc);
+        transition: width 0.3s ease;
+    }
+
+    .logo:hover::after {
+        width: calc(100% - 70px); /* Adjust based on your logo image width */
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.4em;
+    }
+
+    .logo img {
+        max-height: 45px;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <span><i class="fas fa-phone-alt"></i> +95 123 456 789</span>
+            <span><i class="fas fa-envelope"></i> info@pyittinehtaung.edu.mm</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="../images/logo_new1.png" alt="Pyit Tine Htaung University Logo">
+                Pyit Tine Htaung University
+            </div>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="programs.php">Programs</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="portal.php">Portal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
