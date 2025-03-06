@@ -74,14 +74,33 @@ git clone https://github.com/palluxston/PyitTineHtaungUniversity.git
    - Create a new MySQL database named 'pyittinehtaunguniversity'
    - Import the database schema from pyittinehtaunguniversity.sql
 
-3. Configure database connection:
+3. TCPDF Library Setup:
+
+   - Download TCPDF from: https://github.com/tecnickcom/TCPDF/releases
+   - Extract the downloaded file
+   - Copy the contents to the `/tcpdf` directory in the project
+   - Ensure the following directory structure:
+     ```
+     /tcpdf
+     ├── config
+     ├── fonts
+     ├── include
+     ├── tools
+     └── tcpdf.php
+     └── tcpdf_autoconfig.php
+     └── tcpdf_import.php
+
+     ```
+
+
+4. Configure database connection:
    - Open connect.php
    - Update database credentials if necessary
-4. Server setup:
+5. Server setup:
    
    - Place the project folder in your XAMPP's htdocs directory
    - Start Apache and MySQL services in XAMPP Control Panel
-5. Access the application:
+6. Access the application:
    
    - Open your web browser
    - Navigate to: http://localhost/ProjectHayManSuNaing/PyitTineHtaungUniversity/public/
